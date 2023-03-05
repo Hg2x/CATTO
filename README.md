@@ -2,8 +2,6 @@
 
 ![image](https://user-images.githubusercontent.com/92201112/222987690-5addc845-1fe5-45f5-9efa-81fe55ddad36.png)
 
-Source code of my first game jam project CATTO which can be played here: https://hg2x.itch.io/catto
-
 <br>
 
 
