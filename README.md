@@ -39,6 +39,8 @@ Assets used:
 
 - Pixelated fonts:​https://emhuo.itch.io/nico-pixel-fonts-pack​​​
 
+- All the SFX:​ https://freesound.org/​​
+
 
 <br><br>
 
