@@ -50,6 +50,6 @@ public class PlayerData : ScriptableObject
 
     public void ModifySpeed(float amount)
     {
-        LaunchSpeed = Mathf.Clamp(LaunchSpeed + amount, 0, 100);
-    }
+        LaunchSpeed += amount;
+	}
 }

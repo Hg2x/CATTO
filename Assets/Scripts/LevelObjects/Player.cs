@@ -92,7 +92,7 @@ public class Player : MonoBehaviour, IDamageable
 
         _Data.UpdateArrow = false;
         _Arrow.SetActive(false);
-        Vector2 launchForce = _Data.LaunchDirection * _Data.LaunchSpeed;
+        Vector2 launchForce = _Data.LaunchDirection * Mathf.Max(0, _Data.LaunchSpeed);
         _Rigidbody.AddForce(launchForce, ForceMode2D.Impulse);
         if (launchForce != Vector2.zero)
         {
