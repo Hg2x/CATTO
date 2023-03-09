@@ -131,8 +131,8 @@ public class LevelManager : MonoBehaviour, IRegisterable
         var enumLength = Enum.GetValues(typeof(ItemIntensity)).Length;
         var intensity = FunctionLibrary.GetRandomNumber(0, enumLength - 1);
 
-        var itemData = _SpawnerData._ItemDatas[itemIndex];
-        itemData.Intensity = (ItemIntensity)intensity;
+		var itemData = Instantiate(_SpawnerData._ItemDatas[itemIndex]);
+		itemData.Intensity = (ItemIntensity)intensity;
         var speed = Mathf.Max(0f, _CurrentItemSpeed - _SpawnerData.ItemSpeedVariability / 2f) + (UnityEngine.Random.value * _SpawnerData.ItemSpeedVariability) * itemData.ItemSpeed;
 
         _Spawners[spawnerIndex].SpawnItem(_Item, itemData, speed);
